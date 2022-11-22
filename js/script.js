@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.tabs').tabs();
     $('.scrollspy').scrollSpy();
-    $(".dropdown-trigger").dropdown({ hover: true });
+    $(".dropdown-trigger").dropdown({ hover: true, coverTrigger: false});  
     $('.tooltipped').tooltip();
     $('.parallax').parallax(); 
     $('.materialboxed').materialbox();
