@@ -1,4 +1,6 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
-    $('.parallax').parallax();
+    $('.tabs').tabs();
+    $('.scrollspy').scrollSpy();
+    $(".dropdown-trigger").dropdown({ hover: true });
   });

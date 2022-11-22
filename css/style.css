@@ -1,3 +1,39 @@
-.brand-logo{
-    font-family: 'Rubik Bubbles', cursive;
+::-webkit-scrollbar, html::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #4D4D4D;
+  }
+  ::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    background-color: rgb(121 153 151 / 80%);
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-track, html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+    background-color: #4d4d4d;
+  }html{
+    scroll-behavior: smooth;
+    
 }
+
+header {
+    background: url(../img/002.jpg) !important;
+    background-size:cover !important;
+    background-position: center!important;
+    min-height: 1000px!important;
+
+}
+
+@media screen and (max-width: 670px){
+    header{
+      min-height: 500px !important;
+    }
+  }
+  .section{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  .tabs .indicator{
+    background-color: #ffffff !important;
+  }
+  .tabs .tab a:focus, .tabs .tab a:focus.active{
+    background: transparent !important;
+  }
