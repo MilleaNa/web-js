@@ -13,12 +13,15 @@
     scroll-behavior: smooth;
     
 }
+body{
+  font-family: 'Bree Serif', serif;
+}
 
 header {
-    background: url(../img/002.jpg) !important;
+    background: url(../img/css\ -\ Modifié.png) !important;
     background-size:cover !important;
     background-position: center!important;
-    min-height: 1000px!important;
+    min-height: 600px!important;
 
 }
 
@@ -28,14 +31,41 @@ header {
     }
   }
   .section{
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding-top: 60px !important;
+    padding-bottom: 70px !important;
   }
   .tabs .indicator{
-    background-color: #ffffff !important;
+    background-color: #333333 !important;
   }
   .tabs .tab a:focus, .tabs .tab a:focus.active{
     background: transparent !important;
   }
 
-  
+  .card{
+    border-radius: 20px!important ;
+  }
+
+  .card img{
+    border-radius: 20px!important;
+    border-bottom-left-radius: 0px!important;
+    border-bottom-right-radius: 0px!important;
+  }
+
+.btn{
+  border-radius: 25px;
+}
+
+.project_1{
+  background: url(../img/presentation_projet1\ -\ Modifié.png) no-repeat;
+  background-size: cover;
+}
+
+.txtpurple{
+  color: #dfc0e9 !important;
+}
+
+
+.project_3{
+  background: url(../img/Capture.JPG) no-repeat;
+  background-size: cover;
+}

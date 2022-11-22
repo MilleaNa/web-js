@@ -360,7 +360,7 @@
 }
 
 .purple-text.text-darken-1 {
-  color: #8e24aa !important;
+  color: #c7aad1 !important;
 }
 
 .purple.darken-2 {
@@ -372,15 +372,15 @@
 }
 
 .purple.darken-3 {
-  background-color: #6a1b9a !important;
+  background-color: #c7aad1 !important;
 }
 
 .purple-text.text-darken-3 {
-  color: #6a1b9a !important;
+  color: #845c91 !important;
 }
 
 .purple.darken-4 {
-  background-color: #4a148c !important;
+  background-color: rgb(53, 11, 66) !important;
 }
 
 .purple-text.text-darken-4 {
@@ -5252,7 +5252,7 @@ small {
 .btn, .btn-large, .btn-small {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #350b42;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: background-color .2s ease-out;
@@ -5261,7 +5261,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: #2bbbad;
+  background-color: #845c91;
 }
 
 .btn-floating {
