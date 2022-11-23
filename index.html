@@ -43,7 +43,7 @@
                 class="material-icons right">arrow_drop_down</i></a></li>
           <li><a href="#team">L'équipe</a></li>
           <li><a href="#presentation">Présentation</a></li>
-          <li><a href="#contact">Contact</a></li>      
+          <li><a href="#modal1" class="modal-trigger">Contact</a></li>
           <li><a href="https://github.com/MilleaNa" class="tooltipped btn-floating btn-small purple darken-4"
               data-position="bottom" data-tooltip="GitHub">
               <i class="fab fa-github"></i></a>
@@ -53,11 +53,11 @@
               <i class="fab fa-linkedin"></i></a>
           </li>
         </ul>
-        <ul class="sidenav grey lighten-5" id="mobile-menu">
-          <li><a href="#project">Projets</a></li>
-          <li><a href="#team">L'équipe</a></li>
-          <li><a href="#presentation">Présentation</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="sidenav purple darken-4" id="mobile-menu">
+          <li><a class="btn purple darken-4" href="#project">Projets</a></li>
+          <li><a class="btn purple darken-4" href="#team">L'équipe</a></li>
+          <li><a class="btn purple darken-4" href="#presentation">Présentation</a></li>
+          <li><a class="btn purple darken-4 modal-trigger" href="#modal1">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -70,13 +70,13 @@
       <div class="col s12 l3 offset-l2">
         <div class="card">
           <div class="card-image">
-            <img src="img/1664321685829.jpg">
+            <img src="img/lylou.jpg">
             <span class="card-title">DUC Lylou</span>
           </div>
           <div class="card-content">
             <p>Étudiante à Guardia Cybersecurity School en première année à Lyon.<br>
-              Diplôme obtenu :<br>
-              • Diplôme National des Brevet<br>
+              Diplômes obtenus :<br>
+              • Diplôme National des Brevets<br>
               • Baccalauréat STI2D - SIN
             </p>
           </div>
@@ -91,9 +91,9 @@
           </div>
           <div class="card-content">
             <p>Étudiante à Guardia Cybersecurity School en première année à Lyon.<br>
-              Diplôme obtenu :<br>
-              • Diplôme National des Brevet<br>
-              • Baccalauréat
+              Diplômes obtenus :<br>
+              • Diplôme National des Brevets<br>
+              • Baccalauréat HGGSP & Maths
             </p>
           </div>
         </div>
@@ -104,7 +104,7 @@
   <!-- parallax -->
   <div class="parallax-container">
     <div class="parallax">
-      <img src="img/clavier.jpg">
+      <img src="img/clavier1.jpg">
     </div>
   </div>
 
@@ -121,23 +121,26 @@
         <!-- tabs -->
         <ul class="tabs">
           <li class="tab col s6">
-            <a href="#Titre1" class="active purple-text text-darken-4">Titre1</a>
+            <a href="#Lylou" class="active purple-text text-darken-4">Lylou DUC</a>
           </li>
           <li class="tab col s6">
-            <a href="#Titre2" class="purple-text text-darken-4">Titre2</a>
+            <a href="#Clara" class="purple-text text-darken-4">Clara VANTOUROUX</a>
           </li>
         </ul>
-        <div id="Titre1" class="col s12">
-          <p class="flow-text purple-text text-darken-4">Titre1</p>
-          <p>Ici je dois écrire pleins de trucs mais pour l'instant je sais aps alors ça va attendre oki ? :)</p>
-          <p>Là c'est pareil je dois écrire pleins trucs mais d'abord je veux mettre tout mes éléments vous pouvez le
-            comprendre quand même hein !</p>
+        <div id="Lylou" class="col s12">
+          <p class="flow-text purple-text text-darken-4">Lylou DUC</p>
+          <p>Je suis une étudiante de Guardia Cybersecurity School en première année.
+            Je viens de Grenoble, où j'ai eu mon Baccalauréat STI2D option SIN.</p>
+          <p>J'ai découvert Guardia au salon de l'étudiant et j'ai tout de suite postulée, attirée par
+            sa pédagogie par projet.
+          </p>
         </div>
-        <div id="Titre2" class="col s12">
-          <p class="flow-text purple-text text-darken-4">Titre2</p>
-          <p>BOUM Ici je dois écrire pleins de trucs mais pour l'instant je sais aps alors ça va attendre oki ? :)</p>
-          <p>Lol Là c'est pareil je dois écrire pleins trucs mais d'abord je veux mettre tout mes éléments vous pouvez
-            le comprendre quand même hein !</p>
+        <div id="Clara" class="col s12">
+          <p class="flow-text purple-text text-darken-4">Clara VANTOUROUX</p>
+          <p>Je suis étudiante à Guardia Cybersecurity School en 1ere année.
+              Je viens de Nantes, où j'ai fais un bac général avec les spécialités mathématiques et géopolitiques.</p>
+          <p>J'aime beaucoup le monde de la voile ayant grandi dedans, passant des week-ends en régates partout en france pour suivre mon frère.
+              Je suis passionée par la culture asiatique, je voudrai d'ailleurs faire des voyages en Corée du Sud et au Japon après mes études</p>
         </div>
       </div>
     </div>
@@ -177,48 +180,40 @@
   </div>
 
   <!-- contact form -->
-  <section class="section container scrollspy" id="contact">
-    <div class="row">
-      <div class="col s12 l5">
-        <h2 class="purple-text text-darken-4">Contactez nous</h2>
-        <p>Ce texte va disparaitre car il ne sert a rien seul le titre doit rester</p>
-        <p>Lui c'est pareil hein tu connais</p>
-      </div>
-      
-      <div class="col s12 l5 offset-l2">
-        <form>
-          <div class="input-field">
-            <i class="material-icons prefix">email</i>
-            <input type="email" id="email">
-            <label for="email">Votre email</label>
-          </div>
-          <div class="input-field">
-            <i class="material-icons prefix">message</i>
-            <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
-            <label for="message">Votre message</label>
-          </div>
-          <div class="input-field">
-            <p>Vous souhaitez contacter:</p>
-            <p>
-              <label>
-                <input type="checkbox">
-                <span>Clara VANTOUROUX</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input type="checkbox">
-                <span>Lylou DUC</span>
-              </label>
-            </p>
-          </div>
-          <div class="input-field center">
-            <button class="btn">Submit</button>
-          </div>
-        </form>
-      </div>
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <form>
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
+          <input type="email" id="email">
+          <label for="email">Votre email</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">message</i>
+          <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+          <label for="message">Votre message</label>
+        </div>
+        <div class="input-field">
+          <p>Vous souhaitez contacter:</p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span>Clara VANTOUROUX</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span>Lylou DUC</span>
+            </label>
+          </p>
+        </div>
+        <div class="input-field center">
+          <button class="btn modal-close">Submit</button>
+        </div>
+      </form>
     </div>
-  </section>
+  </div>
 
   <!-- footer -->
   <footer class="page-footer grey darken-3">
@@ -226,8 +221,10 @@
       <div class="row">
         <div class="col l6 s12">
           <h5>A propos de notre école</h5>
-          <p>Guardia Cybersecurity School est la première école d'informatique dédiée à la Cybersecurité. Elle est accessible dès l'obtention du Baccalauréat</p>
-          <p>Cette école utilise une pédagogie innovante par projet ce qui signifie que les étudiants sont constamment dans des projets actifs, adieu le surplus de cours théorique.</p>
+          <p>Guardia Cybersecurity School est la première école d'informatique dédiée à la Cybersecurité. Elle est
+            accessible dès l'obtention du Baccalauréat</p>
+          <p>Cette école utilise une pédagogie innovante par projet ce qui signifie que les étudiants sont constamment
+            dans des projets actifs, adieu le surplus de cours théoriques.</p>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Contact Guardia</h5>
