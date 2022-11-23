@@ -6,11 +6,10 @@ $(document).ready(function(){
     $(".dropdown-trigger").dropdown({ hover: true, coverTrigger: false});  
     $('.tooltipped').tooltip();
     $('.parallax').parallax(); 
+    $('.modal').modal();
+    $('#textarea1').val('New Text');
+      M.textareaAutoResize($('#textarea1'));
     $('.materialboxed').materialbox();
-    $('.datepicker').datepicker({
-      disableWeekends: true,
-      yearRange: 1
-    });
   });
 
   new WOW().init()

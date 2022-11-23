@@ -74,3 +74,8 @@ header {
   background: url(../img/amongus\ -\ Modifié\ -\ Modifié.png) no-repeat;
   background-size: cover;
 }
+
+.modal, .modal-content{
+  background-color: #fff;
+  color: rgb(33 33 33);
+}

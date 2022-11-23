@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import Awesome Font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.css" media="screen,projection" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--Import animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Import Google Bree Serif Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/img/93614942.ico">
+
+</head>
+
+<body>
+    <header>
+
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">Communication</a></li>
+            <li><a href="#!">Python</a></li>
+            <li><a href="#!">Html/CSS</a></li>
+        </ul>
+
+        <!--Menu-->
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="../index.html" class="brand-logo">Portfolio</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Projets<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="#team">L'équipe</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/MilleaNa" class="tooltipped btn-floating btn-small purple darken-4"
+                            data-position="bottom" data-tooltip="GitHub">
+                            <i class="fab fa-github"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/lylou-duc-22100b252/"
+                            class="tooltipped btn-floating btn-small purple darken-4" data-position="bottom"
+                            data-tooltip="Linkedin">
+                            <i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+                <ul class="sidenav grey lighten-5" id="mobile-menu">
+                    <li><a href="#project">Projets</a></li>
+                    <li><a href="#team">L'équipe</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container section scrollspy" id="photos">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/portrait.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Portraits</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
+                    nec, tincidunt orci.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 offset-l1 push-l7">
+                <img src="img/city.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
+                    nec, tincidunt orci.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/nature.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Nature</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
+                    nec, tincidunt orci.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="../img/clavier.jpg" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- carousel -->
+    <div class="container section">
+        <h2 class="center">Nos Projets</h2>
+        <div class="carousel carousel-slider center">
+            <div class=" row carousel-fixed-item center">
+                <a id="download-button" class="btn waves-effect waves-light pulse">Voir nos projets</a>
+            </div>
+            <div class="carousel-item project_1 image-responsive" href="#one!">
+                <h2 class="txtpurple">Communication Personnelle</h2>
+                <p class="white-text">Projet 1</p>
+            </div>
+            <div class="carousel-item project_3" href="#two!">
+                <h2 class="txtpurple">Python</h2>
+                <p class="white-text">Projet 3</p>
+            </div>
+            <div class="carousel-item project_4" href="#three!">
+                <h2 class="txtpurple">Html/CSS</h2>
+                <p class="white-text">Projet 4</p>
+            </div>
+        </div>
+        <div class="backmenu container section">
+        <a href="../index.html" class="btn waves-effect waves-light">
+            Accueil
+        </a>
+        </div>
+    </div>
+   
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5>About Me</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit
+                        elit nec, tincidunt orci.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Contact Guardia</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.facebook.com/guardiaschool/">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://twitter.com/guardia_school">Twitter</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.linkedin.com/company/guardia-cybersecurity-school/mycompany/">Linked
+                                In</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.instagram.com/guardia_school/?hl=fr">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2022 Guardia Cybersecurity School</div>
+        </div>
+    </footer>
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <!--Import Wow-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script src="../js/script.js" charset="utf-8"></script>
+
+</body>
+
+</html>
