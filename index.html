@@ -2,20 +2,21 @@
 <html lang="fr">
 
 <head>
+  <meta charset="utf-8">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Import Awesome Font -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/style.css" >
   <!--Import animate.css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <!-- Import Google Bree Serif Font -->
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
   <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="icon" type="image/x-icon" href="/img/93614942.ico">
 
@@ -39,17 +40,18 @@
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
+          <li><a id="easter-egg"> 
+            <i class="material-icons">fingerprint</i></a></li>
           <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Projets<i
                 class="material-icons right">arrow_drop_down</i></a></li>
           <li><a href="#team">L'équipe</a></li>
           <li><a href="#presentation">Présentation</a></li>
           <li><a href="#modal1" class="modal-trigger">Contact</a></li>
-          <li><a href="https://github.com/MilleaNa" class="tooltipped btn-floating btn-small purple darken-4"
+          <li><a href="https://github.com/MilleaNa" target="blank" class="tooltipped btn-floating btn-small purple darken-4"
               data-position="bottom" data-tooltip="GitHub">
               <i class="fab fa-github"></i></a>
           </li>
-          <li><a href="https://www.linkedin.com/in/lylou-duc-22100b252/"
-              class="tooltipped btn-floating btn-small purple darken-4" data-position="bottom" data-tooltip="Linkedin">
+          <li><a href="https://www.linkedin.com/in/lylou-duc-22100b252/" target="blank" class="tooltipped btn-floating btn-small purple darken-4" data-position="bottom" data-tooltip="Linkedin">
               <i class="fab fa-linkedin"></i></a>
           </li>
         </ul>
@@ -70,7 +72,7 @@
       <div class="col s12 l3 offset-l2">
         <div class="card">
           <div class="card-image">
-            <img src="img/lylou.jpg">
+            <img src="img/lylou.jpg" alt="Image de Lylou">
             <span class="card-title">DUC Lylou</span>
           </div>
           <div class="card-content">
@@ -86,7 +88,7 @@
       <div class="col s12 l3 offset-l2">
         <div class="card">
           <div class="card-image">
-            <img src="img/1665658580905.jpg">
+            <img src="img/1665658580905.jpg" alt="Image de Clara">
             <span class="card-title">VANTOUROUX Clara</span>
           </div>
           <div class="card-content">
@@ -104,7 +106,7 @@
   <!-- parallax -->
   <div class="parallax-container">
     <div class="parallax">
-      <img src="img/clavier1.jpg">
+      <img src="img/clavier1.jpg" alt="Fond de site avec un setup violet">
     </div>
   </div>
 
@@ -121,7 +123,7 @@
         <!-- tabs -->
         <ul class="tabs">
           <li class="tab col s6">
-            <a href="#Lylou" class="active purple-text text-darken-4">Lylou DUC</a>
+            <a id="presentation" href="#Lylou" class="active purple-text text-darken-4">Lylou DUC</a>
           </li>
           <li class="tab col s6">
             <a href="#Clara" class="purple-text text-darken-4">Clara VANTOUROUX</a>
@@ -148,20 +150,26 @@
     <div class="container section">
       <h2 class="center">Nos Projets</h2>
       <div class="carousel carousel-slider center">
-        <div class=" row carousel-fixed-item center">
-          <a id="download-button" class="btn waves-effect waves-light pulse">Voir nos projets</a>
-        </div>
-        <div class="carousel-item project_1 image-responsive" href="#one!">
+        <div class="carousel-item project_1 image-responsive" >
           <h2 class="txtpurple">Communication Personnelle</h2>
           <p class="white-text">Projet 1</p>
+          <div class=" row carousel-fixed-item center">
+            <a href="/pages/communication.html" class="btn waves-effect waves-light pulse">Voir ce projet</a>
+          </div>
         </div>
-        <div class="carousel-item project_3" href="#two!">
+        <div class="carousel-item project_3">
           <h2 class="txtpurple">Python</h2>
           <p class="white-text">Projet 3</p>
+          <div class=" row carousel-fixed-item center">
+            <a href="/pages/python.html" class="btn waves-effect waves-light pulse">Voir ce projet</a>
+          </div>
         </div>
-        <div class="carousel-item project_4" href="#three!">
+        <div class="carousel-item project_4">
           <h2 class="txtpurple">Html/CSS</h2>
           <p class="white-text">Projet 4</p>
+          <div class=" row carousel-fixed-item center">
+            <a href="/pages/htmlcss.html" class="btn waves-effect waves-light pulse">Voir ce projet</a>
+          </div>
         </div>
       </div>
     </div>
@@ -175,7 +183,7 @@
   <!-- parallax -->
   <div class="parallax-container">
     <div class="parallax">
-      <img src="img/code_ecran.jpg">
+      <img src="img/code_ecran.jpg" alt="code java script sur un ecran">
     </div>
   </div>
 
@@ -229,11 +237,10 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Contact Guardia</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/guardiaschool/">Facebook</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://twitter.com/guardia_school">Twitter</a></li>
-            <li><a class="grey-text text-lighten-3"
-                href="https://www.linkedin.com/company/guardia-cybersecurity-school/mycompany/">Linked In</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/guardia_school/?hl=fr">Instagram</a>
+            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/guardiaschool/" target="blank">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://twitter.com/guardia_school" target="blank">Twitter</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/company/guardia-cybersecurity-school/mycompany/" target="blank">Linked In</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/guardia_school/?hl=fr" target="blank">Instagram</a>
             </li>
           </ul>
         </div>
@@ -251,9 +258,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
     integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="js/jquery.min.js" charset="utf-8"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script src="js/script.js" charset="utf-8"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://rawgit.com/WeiChiaChang/Easter-egg/master/easter-eggs-collection.js"></script>
 
 </body>
