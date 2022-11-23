@@ -1,7 +1,7 @@
 # web-js
 Projet 5, WEB JS, création d'un portfolio avec materialize et jquery.
 
-a faire :
+    a faire :
 
     •s'occuper des présentation dans la page principal
     • trouver photo (2 par projets minimum)
