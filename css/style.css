@@ -15,6 +15,13 @@
 }
 body{
   font-family: 'Bree Serif', serif;
+  background-color: white;
+  color: black;
+  }
+
+  .dark-mode{
+    background-color: black;
+    color: white;
 }
 
 header {
@@ -43,6 +50,7 @@ header {
 
   .card{
     border-radius: 20px!important ;
+    box-shadow: 10px 10px 10px #4a148c;
   }
 
   .card img{

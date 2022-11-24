@@ -23,13 +23,9 @@ $('.carousel.carousel-slider').carousel({
    $('.carousel').carousel('next');
   }, 4000);
 
-  var active = 0;
-
+  // cursor egg
   function myFunction() {
-    
-    if (active == 1) {
-      alert("on");
-    }
+  
     
     var active = 1;
 
@@ -188,4 +184,11 @@ $('.carousel.carousel-slider').carousel({
       // Sortir de ta fonction
       location.reload();
     }, 5000);
+  }
+
+  //Dark mode
+  function darkmode() {
+    $("body").toggleClass("dark-mode");
+    $(".card").toggleClass("dark-mode");
+    $("#icon_darkmode").html("sunny");
   }
