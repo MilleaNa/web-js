@@ -420,11 +420,10 @@
 }
 
 .deep-purple {
-  background-color: #673ab7 !important;
+  background-color: rgba(53, 11, 66)
 }
-
 .deep-purple-text {
-  color: #673ab7 !important;
+  color: rgba(53, 11, 66) !important;
 }
 
 .deep-purple.lighten-5 {

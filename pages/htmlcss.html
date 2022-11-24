@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Import Awesome Font -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../css/materialize.css">
+  <link rel="stylesheet" href="../css/style.css" >
+  <!--Import animate.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Import Google Bree Serif Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="../img/93614942.ico">
+
+</head>
+
+<body>
+  <header>
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="communication.html">Communication</a></li>
+      <li><a href="python.html">Python</a></li>
+      <li><a href="htmlcss.html">Html/CSS</a></li>
+    </ul>
+
+    <!--Menu-->
+    <nav class="nav-wrapper transparent" id="top_page">
+      <div class="container">
+        <a href="../index.html" class="brand-logo">Portfolio</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a id="easter-egg" onclick="darkmode()"> 
+            <i class="material-icons" id="icon_darkmode">bedtime</i></a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Projets<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="#presentation_projet1">Présentation</a></li>
+          <li><a href="#modal1" class="modal-trigger">Contact</a></li>
+          <li><a href="https://github.com/MilleaNa" target="blank" class="tooltipped btn-floating btn-small purple darken-4"
+              data-position="bottom" data-tooltip="GitHub">
+              <i class="fab fa-github"></i></a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/lylou-duc-22100b252/" target="blank" class="tooltipped btn-floating btn-small purple darken-4" data-position="bottom" data-tooltip="Linkedin">
+              <i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+        <ul class="sidenav purple darken-4" id="mobile-menu">
+          <li><a class="btn purple darken-4" href="#project">Projets</a></li>
+          <li><a class="btn purple darken-4" href="#presentation_projet1">Présentation</a></li>
+          <li><a class="btn purple darken-4 modal-trigger" href="#modal1">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- presentation communication -->
+    <section class="container section scrollspy" id="photos">
+        <div class="row">
+            <div class="section center" id="presentation_projet1">
+                <h1>Projet 4 : Html/CSS</h1>
+            </div>
+            <div class="col s12 l4">
+                <img src="../img/html - Modifié.png" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="purple-text">But du projet...</h2>
+                <p>L’objectif du projet Python a été d’apprendre comment coder dans ce language, 
+                    notamment à l’aide de VIM, via une VM sous linux, afin de pouvoir développer 
+                    un chifoumi ou un morpion. 
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 offset-l1 push-l7">
+                <img src="../img/Captureaa - Modifié.png" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                <h2 class="purple-text">Déroulé...</h2>
+                <p>Nous avons tout d’abord développer un exemple de ce que pouvait être le jeu grâce à 
+                    LARP sous forme d’organigramme. Puis, à l’aide d’une machine virtuelle  nous avons 
+                    pu coder nos différents jeux via VIM. Ainsi, chaque groupe à créer sa propre version 
+                    du chifoumi et du morpion certain ont même fait un pac-man. La première semaine à été 
+                    entièrement dédiée à python quant à la deuxième dédiée au morpion. Pour notre soutenance,
+                    nous avons présenté nos jeux à l'intervenant, dans lesquels nous avions mis des petits easter eggs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="../img/code_ecran.jpg" alt="code java script sur un ecran">
+    </div>
+  </div>
+
+  <!-- contact form -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <form>
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
+          <input type="email" id="email">
+          <label for="email">Votre email</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">message</i>
+          <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+          <label for="message">Votre message</label>
+        </div>
+        <div class="input-field">
+          <p>Vous souhaitez contacter:</p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span>Clara VANTOUROUX</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span>Lylou DUC</span>
+            </label>
+          </p>
+        </div>
+        <div class="input-field center">
+          <button class="btn modal-close">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>A propos de notre école</h5>
+          <p>Guardia Cybersecurity School est la première école d'informatique dédiée à la Cybersecurité. Elle est
+            accessible dès l'obtention du Baccalauréat</p>
+          <p>Cette école utilise une pédagogie innovante par projet ce qui signifie que les étudiants sont constamment
+            dans des projets actifs, adieu le surplus de cours théoriques.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Contact Guardia</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/guardiaschool/" target="blank">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://twitter.com/guardia_school" target="blank">Twitter</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/company/guardia-cybersecurity-school/mycompany/" target="blank">Linked In</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/guardia_school/?hl=fr" target="blank">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2022 Guardia Cybersecurity School</div>
+    </div>
+  </footer>
+
+
+
+  <!--JavaScript at end of body for optimized loading-->
+  <!--Import Wow-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/materialize.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="https://rawgit.com/WeiChiaChang/Easter-egg/master/easter-eggs-collection.js"></script>
+
+</body>
+
+</html>
